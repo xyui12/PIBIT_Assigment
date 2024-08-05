@@ -1,0 +1,43 @@
+import json
+def parse_resume(resume_text):
+    resume_data = {
+        "name": "rashib khan",
+        "contact_information": {
+            "phone": "8291201211",
+            "email": "iam21@gmail.com",
+            "linkedin": "https://www.linkedin.com/rashib",
+            "address": "Phagwara"
+        },
+        "education": [
+            {
+                "Collage": "LPU",
+                "Degree": "B.Tech",
+                "Programme": "Computer Science",
+                "start_date": "2021",
+                "end_date": "2025"
+            }
+        ],
+        "experience": [
+            {
+                "company": "google",
+                "position": "Data Analysit",
+                "start_date": "2023-06",
+                "end_date": "2023-07",
+            }
+        ],
+        "skills": [
+            "Python",
+            "Machine Learning",
+            "Data Analysis"
+        ],
+        "projects": [
+            {
+                "title": "face_dection",
+                "description": "Developed a conversational agent using NLP techniques",
+                "technologies": "Python, TensorFlow"
+            }
+        ]
+    }
+    return json.dumps(resume_data, indent=2)
+resume_text = "Data Goes from this side"
+print(parse_resume(resume_text))
