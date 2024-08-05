@@ -1,0 +1,6 @@
+The aim of this solution to convert resumes in plain text format into a structured JSON format. The solution involves the following steps:
+Input Handling: Read the resume text.
+Text Extraction: Identify and extract key sections such as contact information, education, experience, skills, and projects using predefined patterns.
+Data Structuring: Organize the extracted data into a JSON format with fields including name, contact_information, education, experience, skills, and project.
+Programming Language: Python.
+Output: The JSON format provides a clear, structured view of the resume, making it easy to integrate with applicant tracking systems and other HR tools.
